@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastrar Usuário</title>
+</head>
+
+<body>
+    <%- include('../partials/header'); %>
+    <nav class="menu d-flex justify-content-center align-items-center">
+        <ul class="d-flex m-0">
+            <li><a class="mx-3" href="/login">Login</a></li>
+            <li><a class="mx-3" href="/cadastrar-usuario">Cadastrar Usuário</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- cadastro usuário comum -->
+        <h3 class="text-center mt-3">Cadastro Comum</h2>
+        <form action="/cadastrar-usuario" method="POST" class="form-login">
+            <div class="form-group">
+                <label for="user">Usuário</label>
+                <input class="form-control" type="text" id="user" name="user">
+            </div>
+            <div class="form-group">
+                <label for="senhaComum">Senha</label>
+                <input class="form-control" type="text" id="pw" name="pw">
+            </div>
+            <input type="hidden" name="admin" value="false">
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+        <!-- cadastro adm -->
+        <h3 class="text-center">Cadastro ADM</h2>
+        <form action="/cadastrar" method="POST" class="form-login mb-3">
+            <div class="form-group">
+                <label for="user">Usuário</label>
+                <input class="form-control" type="text" id="user" name="user">
+            </div>
+            <div class="form-group">
+                <label for="senhaComum">Senha</label>
+                <input class="form-control" type="text" id="pw" name="pw">
+            </div>
+            <input type="hidden" name="admin" value="true">
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+    </main>
+    <footer class="d-flex flex-column justify-content-center align-items-center py-3">
+        <p class="m-0">UrsoTeca &copy;2021</p>
+        <p class="m-0">Desenvolvido por Rafael Pontes</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

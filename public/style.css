@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+/* amarelo: #ffca4f */
+/* azul-escuro: #353a57 */
+
+p {
+    margin: 0;
+}
+
+header {
+    background-color: #CCC9E7;
+}
+
+.logo-header {
+    height: 150px;
+}
+
+.header-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+#urso {
+    color: #ffca4f;
+}
+
+#teca {
+    color: #353a57;
+}
+
+.menu {
+    background-color: #FFCA4F;
+    padding: 8px 0;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #353a57;
+    font-weight: bold;
+}
+
+/* FIM DO HEADER + NAV */
+
+/* FOOTER */
+
+footer {
+    background-color: #FFCA4F;
+}
+
+/* PÁGINA DE CADASTRO /cadastrarLivro */
+
+.main-cadastro {
+    background-color: #f6f6f6;
+}
+
+.main-cadastro h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.sec-form {
+    width: 50%;
+    min-width: 340px;
+    margin: 0 auto;
+    background-color: #DCD6F7;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/* PÁGINA DE LIVROS /livros */
+
+.main-livros {
+    background-color: #f6f6f6;
+}
+
+.main-livros h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+thead {
+    background-color: #FFE29E;
+}
+
+/* classes para validações de input */
+
+.correct {
+    border: 2px solid #198754;
+}
+
+.wrong {
+    border: 2px solid #dc3545;
+}
+
+/* página de login */
+
+.form-login {
+    width: 40%;
+    min-width: 340px;
+    margin: 0 auto;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* @media (max-width: 720px) {
+    table {
+        font-size: 0.85rem;
+    }
+} */
