@@ -38,7 +38,7 @@ Nessa página o admin pode editar as informações do livro selecionado <br/>
 ### Página de listagem de livros para o usuário comum
 /livros <br/>
 Nessa página o usuário logado pode só ver os livros cadastrado e suas informações. <br/>
-![Livros](https://i.imgur.com/Pp6kJjk.png)
+![Livros](https://i.imgur.com/SVoZ1pa.png)
 
 **Observação:**
 A aplicação não possui sistema de autenticação/autorização de rotas, ou seja, qualquer usuário que acessar as rotas de admin (/livros-adm, /cadastrar-livro) manualmente digitando no navegador conseguirá acessar as páginas.
